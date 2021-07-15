@@ -1,0 +1,74 @@
+@import '../variables.scss';
+
+.navbar{
+    width: 100%;
+    color:$secondaryColor;
+    display: flex;
+    position: fixed;
+    background: linear-gradient(180deg, #000000 -26.5%, rgba(0, 0, 0, 0.17) 100%);
+    font-family: $font;
+    z-index: 5;
+    .logo {
+        transition: 0.3s;
+        text-decoration: none;
+        padding-left: 1.25rem;
+        color: $secondaryColor;
+    }
+    .logo:hover {
+        transition: 0.4s;
+        color: $primaryColor;
+    }
+
+    .links{
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        padding-right: 5%;
+        p{
+            padding:1.25rem;
+            font-size: $link_font;
+            margin: 0;
+        }
+        .link{
+            transition: 0.3s;
+            color: $primaryColor;
+            text-decoration: none;
+        }
+        .link:hover{
+            transition: 0.4s;
+            color: $secondaryColor;
+        }
+    }
+
+    button {
+        display: none;
+    }
+    .mobile_links{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .navbar{
+        .links {
+            display: none;
+        }
+
+        button{
+            display: block;
+            background: transparent;
+            font-size: 3.5rem;
+            border: none;
+            position: absolute;
+            right: 0;
+            top: 0.5rem;
+            margin-right: 7%;
+            color: $primaryColor;
+        }
+
+        .mobile_links{
+            display: block;
+        }
+    }
+}

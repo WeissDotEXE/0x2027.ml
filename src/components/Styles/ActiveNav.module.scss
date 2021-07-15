@@ -1,0 +1,36 @@
+@import "../variables.scss";
+
+.activeNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.726);
+  z-index: 10;
+
+  button {
+    position: absolute;
+    right: 0;
+    color: $primaryColor;
+    border: transparent;
+    font-size: 4rem;
+    top: 0.5rem;
+    margin-top:-0.2rem;
+    margin-right: 8.3%;
+  }
+  .links{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50%;
+      .link{
+          color: $primaryColor;
+          text-decoration: none;
+          font-size: 3rem;
+          font-weight: 500;
+          font-family: $font;
+      }
+  }
+}
