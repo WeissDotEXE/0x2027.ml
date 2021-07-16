@@ -3,6 +3,7 @@ import styles from "../Styles/Home.module.scss";
 import background from "../Media/200.gif";
 import Footer from "./Footer";
 const Home = () => {
+
   return (
     <div className={styles.homePage}>
       <div className={styles.background}>

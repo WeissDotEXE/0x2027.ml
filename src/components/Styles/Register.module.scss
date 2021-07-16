@@ -1,0 +1,24 @@
+@import '../variables.scss';
+
+.backdrop{
+    width: 100%;
+    position: fixed;
+    height: 100vh;
+    top:0;
+    left: 0;
+    background: #00000096;
+    z-index: 5;
+}
+.register{
+    position: fixed;
+    z-index: 6;
+    .register_card{
+        position: fixed;
+        width: 100%;
+        background: white;
+        top: 23%;
+        left: 19.5%;
+        width: 60%;
+        height: 70vh;
+    }
+}

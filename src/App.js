@@ -4,6 +4,7 @@ import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 import Courses from './components/Courses/Courses';
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
@@ -12,9 +13,9 @@ function App() {
         <div className={styles.App}>
           <Navbar />
           <Switch>
-            <Route path='/' exact component={Home} />
-            <Route path='/courses' exact component={Courses} />
-            <Route path="/profile" exact componet={Profile} />
+            <Route path="/" exact component={Home} />
+            <Route path="/courses" exact component={Courses} />
+            <Route path="/profile" exact component={Profile} />
           </Switch>
         </div>
       </Router>

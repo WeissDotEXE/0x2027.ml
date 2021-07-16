@@ -5,6 +5,7 @@ const Button=(props)=>{
     return(
         <div className={`${styles.button} ${props.className}`} type={props.type || "button"} onClick={props.onClick}>
             {props.children}
+            <div className={styles.bar}></div>
         </div>
     );
 }

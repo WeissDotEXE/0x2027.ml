@@ -1,0 +1,59 @@
+@import "../variables.scss";
+
+#close_btn {
+  position: absolute;
+  background: transparent;
+  border: transparent;
+  top: 1%;
+  right: 3%;
+  font-size: 2vw;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  label {
+    font-weight: 600;
+    font-size: 1.8vw;
+    text-align: center;
+    margin-top: 10px;
+  }
+  input {
+    transition: 0.4s;
+    padding: 14px;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-family: $font;
+    font-size: 1.08vw;
+  }
+  input:hover {
+    transition: 0.4s;
+    background: black;
+  }
+  input:focus {
+    transition: 0.4s;
+    border: 3px solid purple;
+    outline: none;
+    background: black;
+    color: $secondaryColor;
+  }
+  button{
+      transition: 0.3s;
+      position: absolute;
+      bottom: 0;
+      left: 25%;
+      padding: 20px;
+      font-size: 1.8vw;
+      font-weight: 700;
+      background: black;
+      color: white;
+      border-radius: 20px 20px 0px 0px;
+      border: transparent;
+      width: 50%;
+  }
+  button:hover{
+      transition: 0.4s;
+      color: $secondaryColor;
+      padding-top: 10px;
+  }
+}
